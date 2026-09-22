@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Advantage Shopping Order Tests" verbose="1" parallel="false">
+    <test name="End-to-End Order Tests">
+        <groups>
+            <run>
+                <include name="order"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.OrderPaymentPageTests"/>
+            <class name="tests.EndToEndTests"/>
+        </classes>
+    </test>
+</suite>
